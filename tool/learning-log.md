@@ -23,7 +23,7 @@
     var name = "Joe"
     print(name)
     ```
-Note: Semicolons are optional in Swift. However, it drastically improves readability, which is beneficial when you have to debug your code.
+Note: Semicolons are optional in Swift. However, it drastically improves readability, which is beneficial when you have to debug your code. Some concepts in Swift are very similar to JavaScript.
 
 * At last, I changed the value of my original variable by using the `=` constructor to reassign its value:
 
