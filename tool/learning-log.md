@@ -10,8 +10,8 @@
 * I looked over the [Swift documentation](https://www.swift.org/documentation/) for 15 minutes to try and get a gist of the tool
 
 * I downloaded VS Code and installed a Swift extension to import all of its features.
-    * I used watched this [tutorial](https://www.youtube.com/watch?v=J239BhLvOCA) to serve as a reference point during the installation process.
-    * I created a new folder in File Explorer and imported it into VS Code.
+    * I also watched this [tutorial](https://www.youtube.com/watch?v=J239BhLvOCA) to serve as a reference point during the installation process.
+    * I created a new folder in File Explorer called SwiftProjects and imported it into VS Code.
 * I created my first text using the `print` statement:
 
     ``` Swift
