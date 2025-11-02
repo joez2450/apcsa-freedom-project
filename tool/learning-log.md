@@ -10,8 +10,8 @@
 * I looked over the [Swift documentation](https://www.swift.org/documentation/) for 15 minutes to try and get a gist of the tool
 
 * I downloaded VS Code and installed a Swift extension to import all of its features.
-    * I used watched this [tutorial](https://www.youtube.com/watch?v=J239BhLvOCA) to serve as a reference point during the installation process.
-    * I created a new folder in File Explorer and imported it into VS Code.
+    * I also watched this [tutorial](https://www.youtube.com/watch?v=J239BhLvOCA) to serve as a reference point during the installation process.
+    * I created a new folder in File Explorer called SwiftProjects and imported it into VS Code.
 * I created my first text using the `print` statement:
 
     ``` Swift
@@ -23,7 +23,7 @@
     var name = "Joe"
     print(name)
     ```
-Note: Semicolons are optional in Swift. However, it drastically improves readability, which is beneficial when you have to debug your code.
+Note: Semicolons are optional in Swift. However, it drastically improves readability, which is beneficial when you have to debug your code. Some concepts in Swift are very similar to JavaScript.
 
 * At last, I changed the value of my original variable by using the `=` constructor to reassign its value:
 
