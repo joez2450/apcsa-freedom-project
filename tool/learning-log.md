@@ -81,6 +81,8 @@ if num == true {
 
 NOTE: In Swift, conditionals do not use parenthesis to compare the conditions. It only uses curly brackets for the code itself, once the condition is satisfied.
 
+NOTE #2: To make sure the code runs smoothly, you have to save the file using (cmd + s) to keep everything up to date. Then run the code. 
+
 For next week: Create a simple project using all of the types I have learned and conditionals
 <!--
 * Links you used today (websites, videos, etc)
