@@ -45,7 +45,7 @@ For next week: Explore more syntax and watch more tutorials on Youtube regarding
       ```
 NOTE: Like Java, Swift compiles code in order to run it. The second variable does not compile since the computer doesn't know exactly what the value is.
 
-* I created my first set of boolean variables
+* I created my first set of boolean variables by declaring two variables. One that was directly set to a boolean value. The second one being declared with `:Bool` and then being set to a boolean value.
     *  ``` Swift
         let firstItem = true
 
@@ -58,7 +58,7 @@ NOTE: In both cases, the variables are set to the value true. `:Bool` only decla
         let myDate: Date = Date()
       ```
 
-NOTE: The value of `Date()` is the current day, month, year, and time. It is considered right now.
+NOTE: The value of `Date()` is the current day, month, year, and time. It is considered **right now**.
 
 
 * Afterwards, I tested out the `Number` data type. A Number could be represented as an `Int`, `Double`, `CGFloat`, and more.
