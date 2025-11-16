@@ -130,8 +130,8 @@ NOTE: Since `myFirstFunction` includes `mySecondFunction()`, whenever the functi
 * I added my first parameters into a function to then print out a statement using the arguments I used:
 
 ``` Swift
-func myBio (name: String, age: int){
-    print("Hi, (name)! You are (age) years old".)
+func myBio (name: String, age: Int){
+    print("Hi, (name)! You are (age) years old.")
 }
 myBio(name: "Joe", age: 17)
 ```
