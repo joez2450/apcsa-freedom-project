@@ -81,9 +81,63 @@ if num == true {
 
 NOTE: In Swift, conditionals do not use parenthesis to compare the conditions. It only uses curly brackets for the code itself, once the condition is satisfied.
 
-NOTE #2: To make sure the code runs smoothly, you have to save the file using (cmd + s) to keep everything up to date. Then run the code. 
+NOTE #2: To make sure the code runs smoothly, you have to save the file using (cmd + s) to keep everything up to date. Then run the code.
 
-For next week: Create a simple project using all of the types I have learned and conditionals
+For next week: Create a simple program using all of the types I have learned and conditionals
+
+
+### 11/10/25
+* I focused on creating multiple conditionals that would print simple statements:
+    * ``` Swift
+        let num = 17
+        if num == 17 {
+            print("num is 17")
+        }
+
+        let boo: Bool = true
+        if boo == true{
+            print("Let's GOOOO")
+        }
+      ```
+* I moved on and watched video #3 of the [Swift tutorial](https://www.youtube.com/playlist?list=PLwvDm4VfkdpiLvzZFJI6rVIBtdolrJBVB) I found in the earlier weeks
+    * Functions had a similar syntax as JavaScript with the exception that you use `func` to declare a function instead of `function`
+* I created a function that had a print statement in it. I called the functions afterward:
+
+``` Swift
+func myFirstFunction(){
+    print("Hello World")
+}
+
+myFirstFunction()
+```
+* I tried to call a function inside of a function:
+``` Swift
+
+func myFirstFunction(){
+    print("Hello World")
+    mySecondFunction()
+}
+
+func mySecondFunction(){
+    print("My name is Joe")
+}
+
+myFirstFunction()
+```
+
+NOTE: Since `myFirstFunction` includes `mySecondFunction()`, whenever the function is called it prints both "Hello World" and `mySecondFunction`
+
+* I added my first parameters into a function to then print out a statement using the arguments I used:
+
+``` Swift
+func myBio (name: String, age: int){
+    print("Hi, (name)! You are (age) years old".)
+}
+myBio(name: "Joe", age: 17)
+```
+
+For for next time: Continue to learn more concepts and creating another simple program
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
