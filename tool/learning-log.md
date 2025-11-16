@@ -131,11 +131,11 @@ NOTE: Since `myFirstFunction` includes `mySecondFunction()`, whenever the functi
 
 ``` Swift
 func myBio (name: String, age: Int){
-    print("Hi, (name)! You are (age) years old.")
+    print("Hi, \(name)! You are \(age) years old.")
 }
 myBio(name: "Joe", age: 17)
 ```
-
+NOTE: To use the values of the parameters, you have to put a `\` before `(parameter)`. This is called interpolation.
 For for next time: Continue to learn more concepts and creating another simple program
 
 <!--
