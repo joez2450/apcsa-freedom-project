@@ -142,7 +142,7 @@ For for next time: Continue to learn more concepts and creating another simple p
 
 ### 11/23/25
 * I focused on optionals this week, following video 6 of the [Swift playlist](https://www.youtube.com/watch?v=PDWNf4pBI64&list=PLwvDm4VfkdpiLvzZFJI6rVIBtdolrJBVB&index=7) as a guide
-* I created my first optional variable and set it to three different values: true, false, nil
+* I created my first optional variable and set it to three different values: `true`, `false`, `nil`
 ``` Swift
 var numOne: Bool? = true
 var numTwo: Bool? = false
