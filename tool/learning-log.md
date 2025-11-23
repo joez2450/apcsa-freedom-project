@@ -149,7 +149,7 @@ var numTwo: Bool? = false
 var numThree: Bool? = nil
 ```
 
-NOTE: Essentially, the three variables have this pseudo meaning: if there is a value, then it has to be a boolean. `nil`
+NOTE: Essentially, the three variables have this pseudo meaning: if there is a value, then it has to be a boolean. `nil` is a blank value that is similar to `null`. In conditions, `nil` acts as a false. 
 
 * I created a new optional variable and set it to `numThree`. I created another variable that was declared as a boolean and also set it to `numThree`:
 ``` Swift
