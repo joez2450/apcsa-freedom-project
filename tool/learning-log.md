@@ -138,6 +138,36 @@ myBio(name: "Joe", age: 17)
 NOTE: To use the values of the parameters, you have to put a `\` before `(parameter)`. This is called interpolation.
 For for next time: Continue to learn more concepts and creating another simple program
 
+
+
+### 11/23/25
+* I focused on optionals this week, following video 6 of the [Swift playlist](https://www.youtube.com/watch?v=PDWNf4pBI64&list=PLwvDm4VfkdpiLvzZFJI6rVIBtdolrJBVB&index=7) as a guide
+* I created my first optional variable and set it to three different values: true, false, nil
+``` Swift
+var numOne: Bool? = true
+var numTwo: Bool? = false
+var numThree: Bool? = nil
+```
+
+NOTE: Essentially, the three variables have this pseudo meaning: if there is a value, then it has to be a boolean. `nil`
+
+* I created a new optional variable and set it to `numThree`. I created another variable that was declared as a boolean and also set it to `numThree`:
+``` Swift
+var numFour: Bool? = numThree
+var numFive: Bool = numThree // error
+```
+NOTE: In this case, `numFive` cannot be assigned to `numThree` because a non-optional variable cannot equal to an optional one.
+
+* I assigned two question marks to and a `false` to my previous code for `numFive`:
+``` Swift
+var numFive: Bool = numThree ?? true
+```
+
+NOTE: In the code above, if there is a value for `numThree`, `numFive` will equal to `numThree`. Otherwise, it would be false. `??` is a nil-coalescing operator that means otherwise. If the first condition is not satisfied, the second one runs.
+
+NOTE #2: Optionals are important because it avoids crashes. For instance, if a user types something, but there is no result, an optional variable saves the system from crashing.
+
+For next time: Review more concepts such as Tuples and Structs
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
