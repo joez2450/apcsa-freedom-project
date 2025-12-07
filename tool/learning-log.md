@@ -149,7 +149,7 @@ var numTwo: Bool? = false
 var numThree: Bool? = nil
 ```
 
-NOTE: Essentially, the three variables have this pseudo meaning: if there is a value, then it has to be a boolean. `nil` is a blank value that is similar to `null`. In conditions, `nil` acts as a false. 
+NOTE: Essentially, the three variables have this pseudo meaning: if there is a value, then it has to be a boolean. `nil` is a blank value that is similar to `null`. In conditions, `nil` acts as a false.
 
 * I created a new optional variable and set it to `numThree`. I created another variable that was declared as a boolean and also set it to `numThree`:
 ``` Swift
@@ -167,7 +167,57 @@ NOTE: In the code above, if there is a value for `numThree`, `numFive` will equa
 
 NOTE #2: Optionals are important because it avoids crashes. For instance, if a user types something, but there is no result, an optional variable saves the system from crashing.
 
-For next time: Review more concepts such as Tuples and Structs
+For next time: Review more concepts, specifically Structs
+
+
+### 12/1/25
+* This week I focused on Structs. I referred to two videos in my [Swift playlist](https://www.youtube.com/watch?v=PDWNf4pBI64&list=PLwvDm4VfkdpiLvzZFJI6rVIBtdolrJBVB&index=7), that went over the topics, as a guide.
+* First, I created my first struct:
+
+```Swift
+struct Quiz {
+    let title: String
+    let date: Date
+}
+
+
+let firstQuiz: Quiz = Quiz(title: "Quiz 2" date: Date())
+```
+
+NOTE: A struct is like a class in Java. You create what a struct should contain and then you can create "objects" of it.
+
+* Next, I created an initializer inside the struct I had already created.
+
+``` Swift
+init(title: String, date: Date){
+    self.title = title
+    self.date = date
+}
+```
+NOTE: `self` is a way to gather the instance variable of the class, similar to `this` in Java. In addition, the initalizer has the same function as `let firstQuiz: Quiz = Quiz(title: "Quiz 2" date: Date())`. But, it is more customizable to respond and fit the values of what a user would put.
+
+* I created another initalizer within the same struct. But this time, I set `date` with a default value.
+
+``` Swift
+init(title: String, date: Date = .now){
+    self.title = title
+    self.date = date
+}
+```
+NOTE: In case a user only puts in a string value, `date` would always have a default value of `.now`, or the current time. Like in Java, the constructor can have multiple parameters to account for every possibility of user input.
+
+* At last, I created an immuatable struct, which contained variables that were delared with `let`.
+
+```Swift
+struct yourModel {
+    let name: String
+    let isCool: Bool
+}
+```
+
+NOTE: When this struct is called, `name` and `isCool` is set to their apporiate value types by the user's input. After that, it is no longer able to be changed.
+
+For next time: Focus on the concept of Tuples
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
