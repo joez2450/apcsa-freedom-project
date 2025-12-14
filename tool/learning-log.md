@@ -218,6 +218,53 @@ struct yourModel {
 NOTE: When this struct is called, `name` and `isCool` is set to their apporiate value types by the user's input. After that, it is no longer able to be changed.
 
 For next time: Focus on the concept of Tuples
+
+### 12/8/25
+* For this week, I focused on Tuples, following a dedicated [video](https://www.youtube.com/watch?v=zsjCrtENsZA&list=PLwvDm4VfkdpiLvzZFJI6rVIBtdolrJBVB&index=8) in the playlist I followed
+
+NOTE: Tuples returns multiple values instead of just one thing
+
+* I created my first Tuple:
+
+```Swift
+var myName: String = "Joe"
+var userIsCool: Bool = false
+
+func getUserName() -> String {
+    myName
+}
+
+func getUserStatus() -> Bool {
+     return userIsCool
+}
+
+func getUserInfo() -> (String, Bool){
+    let name = getUserName()
+    let status = getUserStatus()
+
+    return(name, status)
+}
+```
+NOTE: In the example above, I created two functions `getUserName` and `getUserStatus` to return the values of `myName` and `userIsCool`. Then, I set each values to `name` and `status` in a new function, `getUserInfo`, and returned both of the values as allowed by `(String, Bool)`.
+
+NOTE: You do not need the `return` statement to return a value in a `func`, as shown in the `getUserName` function above.
+
+* I created my first tuple variable of two data types: String and Bool.
+
+```Swift
+var userData: (String, Bool) = (myName, userIsCool)
+```
+NOTE: This variable will contain the values of `myName` and `userIsCool`. When it is printed, it will display `"Joe", false`.
+
+* I created two additional variables to access information from my `getUserInfo` function.
+
+```Swift
+let infoOne = getUserInfo()
+let dataOne: String = info1.0
+```
+NOTE: `dataOne` is of the string data type. The `.0` is similar to the concept of arrays. It points to the first value that the function returns, and it is based on zero-index counting.
+
+For next time: Focus on using classes and accessing control
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
