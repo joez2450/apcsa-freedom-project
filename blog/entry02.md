@@ -66,10 +66,10 @@ As of right now, I am on the second stage of the Engineering Design Process: Res
 
 ### Skills
 #### Effectively Using Resources
-Throughout my tinkering process, I had mainly followed one Swift tutorial playlist on YouTube. While the videos were in-depth, it was also very long if I had watched every second. To be more effective with my time, I played the video in 2x speed and also skipped any parts that seemed simple and basic.
+Throughout my tinkering process, I had mainly followed one Swift tutorial playlist on YouTube. While the videos were in-depth, it was also very long if I had watched every second. To be more effective with my time, I played the video in 2x speed and also skipped any parts that seemed simple and basic. In addition to that, I also looked at the bookmarks provided by the video creater and see which topics would be most relevant to my creation as I start to brainstorm solutions to my problem. 
 
 #### Organization
-Starting to learn a new tool is difficult as it requires you to learn many concepts and components. But, I have created bookmarks to the resources I have been using frequently to learn. By doing this, I stay organized and also get to the places where I want to be at a quicker speed. Not only that, but it also allows me to conduct more tinkering process without having to figure out where some links are at. 
+Starting to learn a new tool is difficult as it requires you to learn many concepts and components. But, I have created bookmarks to the resources I have been using frequently to learn. By doing this, I stay organized and also get to the places where I want to be at a quicker speed. Not only that, but it also allows me to conduct more tinkering process without having to be stuck and figuring out where certain links or files are at.
 
 [Previous](entry01.md) | [Next](entry03.md)
 
