@@ -2,16 +2,18 @@
 ##### 12/15/25
 
 ### Context
-For the past few weeks, I continued to tinker with Swift, an IOS development tool that I selected to build my Freedom Project idea of creating a brain stimulating app.
+For the past few weeks, I continued to tinker with Swift, an IOS development tool that I selected to build my Freedom Project idea of creating a brain stimulating app. As I used Swift, I have been recording my gained knowledge in my [learning log](https://github.com/joez2450/apcsa-freedom-project/blob/main/tool/learning-log.md) so that I could use it as a reference tool in the future. For the most part, I have been creating many different codes and running it into the terminal to increase my knowledge in various new topics.
 
 ### Tinkering
-So far, I have learned four topics: Structs, Tuples, and Functions, using a [Swift tutorial](https://www.youtube.com/playlist?list=PLwvDm4VfkdpiLvzZFJI6rVIBtdolrJBVB) as a reference to guide along the way.
-
-First, I tackled functions. I created a new `func` and called it `myFirstFunction`. Within it, I added a `print` statement to output "Hello World".
+So far, I have learned four concepts: Structs, Tuples, and Functions, using a [Swift tutorial](https://www.youtube.com/playlist?list=PLwvDm4VfkdpiLvzZFJI6rVIBtdolrJBVB) as a reference to guide along the way. First, I tackled functions. I created a new `func` and called it `myFirstFunction`. I also declared a variable using `var` and named it to `num`. I set the variable value to 0. Within the function, I added a `print` statement to output "Hello World". I also created a conditional where if `num > 0`, "Yes" would also be outputted.
 
 ``` Swift
+var num = 0
 func myFirstFunction(){
     print("Hello World")
+    if num > 0 {
+        print("Yes")
+    }
 }
 ```
 
