@@ -175,13 +175,13 @@ For next time: Review more concepts, specifically Structs
 * First, I created my first struct:
 
 ```Swift
-struct Quiz {
+struct Book {
     let title: String
     let date: Date
 }
 
 
-let firstQuiz: Quiz = Quiz(title: "Quiz 2" date: Date())
+let firstQuiz: Book = Book(title: "Quiz 2" date: Date())
 ```
 
 NOTE: A struct is like a class in Java. You create what a struct should contain and then you can create "objects" of it.
@@ -265,6 +265,53 @@ let dataOne: String = info1.0
 NOTE: `dataOne` is of the string data type. The `.0` is similar to the concept of arrays. It points to the first value that the function returns, and it is based on zero-index counting.
 
 For next time: Focus on using classes and accessing control
+
+### 1/5/26
+*  I continued to look over classes and access control after the break
+
+* I created another class called firstClass and declared two new string variables: `title` and `name`. I also created an `init` and accepted tow parameters before setting `title` and `name` to them.
+``` Swift
+class firstClass {
+    let title: String
+    let name: String
+
+    init(title: String, name: String){
+        self.title = title
+        self.name = name
+    }
+}
+```
+NOTE: Classes are slow because they are stored in heap. Structs on the other hand are fast because they are stored in the stack.
+
+* Afterward, I created my first `deinit` within the class to destroy an object stored in memory.
+
+```Swift
+    deinit(){
+        print ("Object is being deinitialized!")
+    }
+```
+
+* I also added a function into the class to modify `title` and `name`.
+
+```Swift
+func modifyVal (newName: String, newTitle: String){
+    self.name = newName
+    self.title = newTitle
+}
+```
+* In a new file, I created a public and private variable. I also printed both variables out.
+```Swift
+public var nameOne: String = "Joe"
+private var nameTwo: String = "Joe Zheng"
+
+print(nameOne)
+print(nameTwo)
+```
+NOTE: In the example above, the second print statement would display an error. The concept of public and private is similar to Java. Public allows any other modules (apps/frameworks) to access the content. On the other hand, private only restricts access to the enclosing declaration, which can be classes, structs, or enums.
+
+For next week: Focus on how to create algorithms with loops and arrays
+
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
