@@ -2,7 +2,7 @@
 ##### 2/2/26
 
 ### Context
-Following the winter break, I continued to watch through a [Swift tutorial playlist](https://www.youtube.com/playlist?list=PLwvDm4VfkdpiLvzZFJI6rVIBtdolrJBVB) and learning new concepts. Previously, I learned about the different types of Swift variables and loops. But over the past few weeks, I focused on the core concepts of access and control.
+Following the winter break, I continued to watch through the [Swift tutorial playlist](https://www.youtube.com/playlist?list=PLwvDm4VfkdpiLvzZFJI6rVIBtdolrJBVB) I found to learn new concepts. Previously, I learned about the different types of Swift variables and loops. But over the past few weeks, I focused on the core concepts of access and control, knowing that they would be extremely vital in my brain stimulating app.
 
 To begin with my tinkering process, I first created a new class called `firstClass` and within it, I created two variables of the `String` type: `title` and `name`. After that, I created an `init`, which is essentially the equivalent of a constructor in a Java class, and gave it two parameters: `title` and `name` respectively. I also made parameters the `String` data type.
 
@@ -42,7 +42,7 @@ As of right now, I am on stages three and four in the Engineering Design Process
 
 ### Skills
 #### Organization
-As I was tinkering, I organized my files on VSCode and also keep track of my to-do list to ensure I can learn Swift effectively. Taking notes was important, but getting on top of myself allowed me to learn with less complications.
+As I was tinkering, I organized my files on VSCode and also keep track of my to-do list to ensure I can learn Swift effectively. Taking notes was important, but getting on top of myself allowed me to learn with less complication
 
 
 #### Decision-Making
