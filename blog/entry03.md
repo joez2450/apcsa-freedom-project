@@ -36,14 +36,14 @@ print(nameOne)
 print(nameTwo)
 ```
 
-As of recently, I have also downloaded Xcode. I plan to familiarize myself with the coding platform and transition to it fully from VScode since it is the best supported Swift program. Concept wise, I will learn how to build a main page of my Brain Stimulating App.
+As of recently, I have also downloaded Xcode. I plan to familiarize myself with the coding platform and transition to it fully from VScode since it is the best supported Swift program. Concept wise, I will learn how to draft a main page of my Brain Stimulating App.
 
 ### EDP
 As of right now, I am on stages three and four in the Engineering Design Process: Brainstorm possible solutions and Plan the promising solutions. Now that me and Kyle have identified a clear problem, we hope to tackle it by creating an app. But in order to maximize our solution effect, we need to understand which features to add in our apps.
 
 ### Skills
 #### Organization
-As I was tinkering, I organized my files on VSCode and also keep track of my to-do list to ensure I can learn Swift effectively. Taking notes was important, but getting on top of myself and knowing where everything I need is allowed me to learn with less complication. Not only that, but I could refer back to any interesting code I saved to process it. 
+As I was tinkering, I organized my files on VSCode and also keep track of my to-do list to ensure I can learn Swift effectively. Taking notes was important, but getting on top of myself and knowing where everything I need is allowed me to learn with less complication. Not only that, but I could refer back to any interesting code I saved to process it later on, enhancing my learning depth. 
 
 
 #### Decision-Making
