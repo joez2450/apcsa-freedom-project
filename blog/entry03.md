@@ -2,7 +2,7 @@
 ##### 2/2/26
 
 ### Context
-Following the winter break, I continued to watch through the [Swift tutorial playlist](https://www.youtube.com/playlist?list=PLwvDm4VfkdpiLvzZFJI6rVIBtdolrJBVB) I found to learn new concepts. Previously, I learned about the different types of Swift variables and loops and recorded all of my newly gained knowledge in my [learning log](https://github.com/joez2450/apcsa-freedom-project/blob/main/tool/learning-log.md). But over the past few weeks, I narrowed my focus on the core concepts of access and control, knowing that they would be extremely vital in my brain stimulating app as I work between different pages.
+Following the winter break, I continued to watch through the [Swift tutorial playlist](https://www.youtube.com/playlist?list=PLwvDm4VfkdpiLvzZFJI6rVIBtdolrJBVB) I found to learn new concepts. Previously, I learned about the different types of Swift variables and loops and recorded all of my newly gained knowledge in my [learning log](https://github.com/joez2450/apcsa-freedom-project/blob/main/tool/learning-log.md). But over the past few weeks, I narrowed my focus on the core concepts of [access and control](https://www.youtube.com/watch?v=UbX2UtgZTJI&list=PLwvDm4VfkdpiLvzZFJI6rVIBtdolrJBVB&index=13), knowing that they would be extremely vital in my brain stimulating app as I work between different pages.
 
 ### Tinkering
 To begin my tinkering process, I first created a new class called `firstClass` and within it, I created two variables of the `String` type: `title` and `name`. After that, I created an `init`, which is essentially the equivalent of a constructor in a Java class, and gave it two parameters: `title` and `name`, respectively. I also made parameters the `String` data type.
