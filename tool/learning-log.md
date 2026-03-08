@@ -309,7 +309,53 @@ print(nameTwo)
 ```
 NOTE: In the example above, the second print statement would display an error. The concept of public and private is similar to Java. Public allows any other modules (apps/frameworks) to access the content. On the other hand, private only restricts access to the enclosing declaration, which can be classes, structs, or enums.
 
-For next week: Focus on how to create algorithms with loops and arrays
+For next week: Create a main menu page on Xcode and continue to learn Control Flow by watching tutorials
+
+### 3/2/25
+* On Xcode, I created a new file called Mental Wellness
+    * I created three additional files within the project: `Resources.swift`, `Settings.swift`, and `Start.swift`
+* Within the main file, I created a `NavigationStack` and inside it, I added a `VStack` with `padding: 30`.
+    * I created multiple `NavigationLink`, one for each file. I set the names and destination to its designated files. I also bordered each button using `.buttonStyle`.
+    ``` Swift
+
+                        NavigationLink("Start", destination: Start())
+                            .buttonStyle(.borderedProminent)
+
+                        NavigationLink("Settings", destination: Settings())
+                            .buttonStyle(.bordered)
+
+                        NavigationLink("Resources", destination: Resources())
+                            .buttonStyle(.bordered)
+    ```
+
+* Inside each file, I also added text to display the name of each game, using `Text()`. I also used `.font()` and `.bold()` to customize the appearance.
+```Swift
+// Start.swift file
+VStack {
+            Text("Game Menu")
+                .font(.title)
+                .bold()
+        }
+
+// Resources.swift file
+VStack {
+            Text("Resources Screen")
+                .font(.title)
+                .bold()
+        }
+
+// Settings.swift file
+VStack {
+            Text("Settings Screen")
+                .font(.title)
+                .bold()
+        }
+```
+
+
+NOTE: `NavigationStack` is the main container that manages the stack of views. `NavigationLink` switches to a new view based on the input of `destination:`. `VStack` arranges the child view vertically, in order words, from top to bottom.
+
+For next week: Create one game and also incorporate Control Flow into it
 
 
 <!--
