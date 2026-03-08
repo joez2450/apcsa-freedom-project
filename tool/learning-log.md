@@ -312,20 +312,19 @@ NOTE: In the example above, the second print statement would display an error. T
 For next week: Create a main menu page on Xcode and continue to learn Control Flow by watching tutorials
 
 ### 3/2/25
-* On Xcode, I created a new file called Mental Wellness
+* On Xcode, I created a new project file called Mental Wellness
     * I created three additional files within the project: `Resources.swift`, `Settings.swift`, and `Start.swift`
 * Within the main file, I created a `NavigationStack` and inside it, I added a `VStack` with `padding: 30`.
     * I created multiple `NavigationLink`, one for each file. I set the names and destination to its designated files. I also bordered each button using `.buttonStyle`.
-    ``` Swift
+``` Swift
+NavigationLink("Start", destination: Start())
+   .buttonStyle(.borderedProminent)
 
-                        NavigationLink("Start", destination: Start())
-                            .buttonStyle(.borderedProminent)
+NavigationLink("Settings", destination: Settings())
+   .buttonStyle(.bordered)
 
-                        NavigationLink("Settings", destination: Settings())
-                            .buttonStyle(.bordered)
-
-                        NavigationLink("Resources", destination: Resources())
-                            .buttonStyle(.bordered)
+NavigationLink("Resources", destination: Resources())
+   .buttonStyle(.bordered)
     ```
 
 * Inside each file, I also added text to display the name of each game, using `Text()`. I also used `.font()` and `.bold()` to customize the appearance.
@@ -354,6 +353,8 @@ VStack {
 
 
 NOTE: `NavigationStack` is the main container that manages the stack of views. `NavigationLink` switches to a new view based on the input of `destination:`. `VStack` arranges the child view vertically, in order words, from top to bottom.
+
+* In the end, I watched a [`for` loop Swift tutorial video](https://www.youtube.com/watch?v=7hAmXRwBQxc) for 20 minutes, seeing how I can implement it in my intended plan of creating a memory and reaction time test game. 
 
 For next week: Create one game and also incorporate Control Flow into it
 
