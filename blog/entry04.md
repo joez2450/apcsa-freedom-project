@@ -21,9 +21,7 @@ Adding onto the starter code, I included `NavigationLink()` three times, one for
     .buttonStyle(.bordered)
 ```
 
-After setting up the `NavigationLink()` on the main page, I  created additional files to ensure that each `destination:` had a pathway. I named the files as `Start.swfit`, `Resources.swift`, and `Settings.swift`.
-
-In all of the files, I added a `Text()` and included a title within the parenthesis. I also changed the font appearance by using `.font(title)` and `.bold()`.
+After setting up the `NavigationLink()` on the main page, I  created additional files to ensure that each `destination:` had a pathway. I named the files as `Start.swfit`, `Resources.swift`, and `Settings.swift`. In all of the files, I added a `Text()` and included a title within the parenthesis. I also changed the font appearance by using `.font(title)` and `.bold()`.
 
 ```Swift
 // Start.swift file
