@@ -397,6 +397,7 @@ Note: @State is used for games so everything updates correctly and smoothly
            } else {
                GameStart();
            }
+    }
 ```
 * Inside a new `func GameStart` I created, I set `isActive` to true. In addition, I changed the `backgroundColor` to `Color.red`. I changed `message` to "Wait for Green".
 
