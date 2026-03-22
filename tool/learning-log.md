@@ -407,7 +407,6 @@ DispatchQueue.main.asyncAfter(deadline: .now() + randomDelay) {
         self.backgroundColor = Color.green;
         self.message = "Tap!";
         self.startTime = Date();
-        self.reactionTime = Date().timeIntervalSince(startTime);
             }
         }
 }
