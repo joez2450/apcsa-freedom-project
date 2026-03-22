@@ -374,24 +374,29 @@ For next week: Start to create a game and also incorporate Control Flow into it
     @State private var isActive = false;
 ```
 Note: @State is used for games so everything updates correctly and smoothly
-* Using `Text()` I created a game title within `body`. Then, I used `.font` and `.padding()` to customize the title to make it look more appealing.
-    * I also added a `onTapGesture` so that when a user clicks on the screen, the game starts
+* Using two `Text()`, I created a game title and message within `body`.
+    * I also added a `onTapGesture` so that when a user clicks on the screen, the game starts responds accordingly.
 ```Swift
-var body: some View {
+ var body: some View {
         VStack {
             Text("Reaction Time Game")
                 .font(.title)
                 .bold()
-            onTapGesture{
-                GameStart();
-            }
+             Text(message)
+                .font(.headline)
+        }
+        .onTapGesture{
+            check();
         }
         .padding()
     }
 
-    func GameStart() {
-
-    }
+    func check(){
+           if gameState {
+               EndGame();
+           } else {
+               GameStart();
+           }
 ```
 * Inside a new `func GameStart` I created, I set `isActive` to true. In addition, I changed the `backgroundColor` to `Color.red`. I changed `message` to "Wait for Green".
 
