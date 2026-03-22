@@ -405,7 +405,7 @@ let randomDelay = Double.random(in: 1.0...4.0)
 DispatchQueue.main.asyncAfter(deadline: .now() + randomDelay) {
     if self.isActive {
         self.backgroundColor = Color.green;
-        self.message = "TAP!";
+        self.message = "Tap!";
         self.startTime = Date();
         self.reactionTime = Date().timeIntervalSince(startTime);
             }
@@ -415,8 +415,8 @@ DispatchQueue.main.asyncAfter(deadline: .now() + randomDelay) {
 * I created a `func EndGame()` to display the reaction time as a result:
 ```Swift
 func EndGame(){
-        let timeTaken = Date().timeIntervalSince(startTime);
-        let ms = Int(timeTaken * 1000);
+        let reactionTime = Date().timeIntervalSince(startTime);
+        let ms = Int(reactionTime * 1000);
         message = "\(ms)ms\nTap to play again";
         backgroundColor = Color.blue;
         isActive = false;
@@ -424,7 +424,7 @@ func EndGame(){
     }
 
 ```
-For next week: Head on to the next game: Memory Test. In addition, fix remaining bugs on the reaction time game. 
+For next week: Head on to the next game: Memory Test. In addition, fix remaining bugs on the reaction time game.
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
