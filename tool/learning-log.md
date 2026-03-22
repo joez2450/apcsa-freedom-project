@@ -397,16 +397,34 @@ var body: some View {
 
 * After a quick research on the necessary concepts, I set up a timing delay with this code:
 ```Swift
-let randomDelay = Double.random(in: 1.0...8.0)
- DispatchQueue.main.asyncAfter(deadline: .now() + randomDelay) {
-            if self.isWaiting {
-                self.backgroundColor = Color.green;
-                self.message = "TAP!";
-                self.startTime = Date();
-                self.reactionTime = Date().timeIntervalSince(startTime);
+func GameStart() {
+gameState = true;
+message = "Wait for green...";
+backgroundColor = Color.red;
+let randomDelay = Double.random(in: 1.0...4.0)
+DispatchQueue.main.asyncAfter(deadline: .now() + randomDelay) {
+    if self.isActive {
+        self.backgroundColor = Color.green;
+        self.message = "TAP!";
+        self.startTime = Date();
+        self.reactionTime = Date().timeIntervalSince(startTime);
             }
+        }
+}
 ```
-For next week: Head on to the next game: Memory Test
+* I created a `func EndGame()` to display the reaction time as a result:
+```Swift
+func EndGame(){
+        let timeTaken = Date().timeIntervalSince(startTime);
+        let ms = Int(timeTaken * 1000);
+        message = "\(ms)ms\nTap to play again";
+        backgroundColor = Color.blue;
+        isActive = false;
+        gameState = false;
+    }
+
+```
+For next week: Head on to the next game: Memory Test. In addition, fix remaining bugs on the reaction time game. 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
