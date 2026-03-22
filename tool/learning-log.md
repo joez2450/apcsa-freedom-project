@@ -421,7 +421,7 @@ DispatchQueue.main.asyncAfter(deadline: .now() + randomDelay) {
         }
 }
 ```
-* I created a `func EndGame()` to display the reaction time as a result:
+* In the end, I created a `func EndGame()` to display the reaction time as a result:
 ```Swift
 func EndGame(){
         let reactionTime = Date().timeIntervalSince(startTime);
