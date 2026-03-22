@@ -311,7 +311,7 @@ NOTE: In the example above, the second print statement would display an error. T
 
 For next week: Create a main menu page on Xcode and continue to learn Control Flow by watching tutorials
 
-### 3/2/25
+### 3/2/26
 * On Xcode, I created a new project file called Mental Wellness
     * I created three additional files within the project: `Resources.swift`, `Settings.swift`, and `Start.swift`
 * Within the main file, I created a `NavigationStack` and inside it, I added a `VStack` with `padding: 30`.
@@ -354,11 +354,59 @@ VStack {
 
 NOTE: `NavigationStack` is the main container that manages the stack of views. `NavigationLink` switches to a new view based on the input of `destination:`. `VStack` arranges the child view vertically, in order words, from top to bottom.
 
-* In the end, I watched a [`for` loop Swift tutorial video](https://www.youtube.com/watch?v=7hAmXRwBQxc) for 20 minutes, seeing how I can implement it in my intended plan of creating a memory and reaction time test game. 
+* In the end, I watched a [`for` loop Swift tutorial video](https://www.youtube.com/watch?v=7hAmXRwBQxc) for 20 minutes, seeing how I can implement it in my intended plan of creating a memory and reaction time test game.
 
-For next week: Create one game and also incorporate Control Flow into it
+For next week: Start to create a game and also incorporate Control Flow into it
 
+### 3/16/26
+* In Xcode, I created a new file and named it `gameSceneOne.swift` to represent a reaction time game.
+    * I created six variables to maintain key aspects of the game: `startTime = Date()`, `reactionTime: Double = 0.0`, `gameState = false`, `dotColor = Color.red`, `message: String = "Wait for yellow"`, and `isActive = false`.
+        * `reactionTime` checks the user's reaction time
+        * `gameState` checks if the game has started or not
+        * `dotColor` checks if the dot is either red or yellow
+        * `startTime` checks when the dot turns yellow (ready to press)
+``` Swift
+    @State private var gameState = false;
+    @State private var startTime = Date();
+    @State private var reactionTime: Double = 0.0;
+    @State private var backgroundColor = Color.white;
+    @State private var message: String = "Wait for green";
+    @State private var isActive = false;
+```
+Note: @State is used for games so everything updates correctly and smoothly
+* Using `Text()` I created a game title within `body`. Then, I used `.font` and `.padding()` to customize the title to make it look more appealing.
+    * I also added a `onTapGesture` so that when a user clicks on the screen, the game starts
+```Swift
+var body: some View {
+        VStack {
+            Text("Reaction Time Game")
+                .font(.title)
+                .bold()
+            onTapGesture{
+                GameStart();
+            }
+        }
+        .padding()
+    }
 
+    func GameStart() {
+
+    }
+```
+* Inside a new `func GameStart` I created, I set `isActive` to true. In addition, I changed the `backgroundColor` to `Color.red`. I changed `message` to "Wait for Green".
+
+* After a quick research on the necessary concepts, I set up a timing delay with this code:
+```Swift
+let randomDelay = Double.random(in: 1.0...8.0)
+ DispatchQueue.main.asyncAfter(deadline: .now() + randomDelay) {
+            if self.isWaiting {
+                self.backgroundColor = Color.green;
+                self.message = "TAP!";
+                self.startTime = Date();
+                self.reactionTime = Date().timeIntervalSince(startTime);
+            }
+```
+For next week: Head on to the next game: Memory Test
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
