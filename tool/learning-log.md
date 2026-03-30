@@ -465,7 +465,8 @@ For next week: Head on to the next game: Memory Test. In addition, fix remaining
             }
         }
         ```
-* I repeated the process again, within the same ZStack.
+NOTE: `.foregroundColor` sets a color to a text, icon, or shapes within a view. This is especially helpful for color contrast, making all of the elements on top of a background visible.
+* I repeated the process again within the same ZStack, making two more cards.
 For next week: Learn how to animate the cards and do the backend code
 <!--
 * Links you used today (websites, videos, etc)
