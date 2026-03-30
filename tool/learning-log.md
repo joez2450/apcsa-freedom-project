@@ -434,6 +434,39 @@ func EndGame(){
 
 ```
 For next week: Head on to the next game: Memory Test. In addition, fix remaining bugs on the reaction time game.
+
+
+### 3/23/26
+* Before I moved onto my next goal, I fixed remaining issues on my reaction time game.
+    * I realized that once a user clicked to play the game, there was no button to redirect them back to a previous page. I created a new `NavigationStack` and also `NavigationLink` to provide a direct link pathway to the main menu.
+    ```Swift
+       var body: some View {
+        NavigationStack {
+            VStack(spacing: 30) {
+
+                NavigationLink("Return to Main Menu", destination: ContentView())
+                    .buttonStyle(.borderedProminent)
+            }
+        }
+       }
+    ```
+* My main goal for this week is to start on the memory game.
+* I searched for tutorials on Youtube on how to create the game, since it is very complex. After a quick search, I was able to find a specific [tutorial](https://www.youtube.com/watch?v=aJ9kKX6Ak3k) that met all my needs. I watched the video on 2x speed for 10 minutes.
+* In Xcode, I created a new file called `GameSceneTwo.Swift`.
+    * Within the file, I created a new struct called `CardView`, writing `:View` afterward to indicate that it will behave like a view. I created a `body` within the struct and applying it `:some View`.
+        * I created a ZStack within both of the structures and created a `RoundedRectangle` with a `cornerRadius` of 10.0. I also applied the shape with `.fill` and `foregroundColor(Color.orange)`. Using `Text()`, I put 1 in between the parenthesis. I also added padding to make the card look more appealing.
+        ```Swift
+        struct CardView: View {
+            var body: some View {
+                ZStack {
+                RoundedRectangle(cornerRadius: 10.0).fill().foregroundColor(Color.white)
+                Text("1")
+                }.padding(15)
+            }
+        }
+        ```
+* I repeated the process again, within the same ZStack.
+For next week: Learn how to animate the cards and do the backend code
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
