@@ -2,7 +2,7 @@
 ##### 4/13/26
 
 ### Context
-Ever since the last blog, I have followed my [MVP plan](https://github.com/kylel5957/apcsa-freedom-project/blob/main/prep/plan.md) and the deadlines I set for myself to build a minimal viable product that functioned. As I was constructing my prototype with Kyle, I also referred to various parts of a [Swift tutorial](https://www.youtube.com/watch?v=-VC3hIEL7eQ) to learn new code that were of immediate need to build certain features (navigation) that I desired.
+Ever since the last blog, I have followed my [MVP plan](https://github.com/kylel5957/apcsa-freedom-project/blob/main/prep/plan.md) and the deadlines I set for myself to build a minimal viable product that functioned. As I was constructing my prototype with Kyle, I also referred to various parts of a [Swift tutorial](https://www.youtube.com/watch?v=-VC3hIEL7eQ) to learn new code that were of immediate need to build certain features (navigation) that I desired. In addition, I used [W3Schools](https://www.w3schools.com/swift/) to learn any additional syntaxes and their function that seemed to be useful in my solution.
 
 ### Tinkering
 Continuing with the same file where I made a main menu page using `NavigationLink` that allowed a user to travel multiple pages, I created my first game: Reaction Time Test. I began by creating six variables: `gameState = false`, `startTime = Date()`, `backgroundColor = Color.blue`, `message: String = "Click to start"`, and `isActive = false`. `gamestate` would check to see if the game is active. `startTime` stores the current time in the moment, which would be useful to calculate reaction time later on.
