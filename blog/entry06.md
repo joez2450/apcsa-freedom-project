@@ -10,7 +10,7 @@ In Xcode, I started off by with a transition to using `TabView` and `Tab` to cha
 
 
 ```Swift
-TabView{
+      TabView{
                     Tab("Home", systemImage: "play.circle"){
                         Text("Home")
                         ScrollView{
