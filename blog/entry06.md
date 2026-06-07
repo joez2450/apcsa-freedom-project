@@ -2,7 +2,7 @@
 ##### 5/8/26
 
 ### Context
-Ever since the last blog, I have been refining my app by implementing Beyond MVP features. After engaging in a gallery walk activity, I was able to receive feedback from my peers, and comparing their answers with the ones that Kyle recieved, we found three main points to work on in our game: improve the asthetics of our app, add a settings option to change the background color, and provide a FAQ section. As we pinpointed these, I immediately got to work and browsed [W3schools](https://www.w3schools.com/swift/swift_ui_styling_theming.asp) and watched a [Youtube tutorial](https://www.youtube.com/watch?v=JqQQozkFeJU) to understand how I can bring these suggestions to my app.
+Ever since the last blog, I have been refining my app by implementing Beyond MVP features. After engaging in a gallery walk activity, I was able to receive feedback from my peers, and comparing their answers with the ones that Kyle recieved, we found three main points to work on in our game: improve the asthetics of our app, add a settings option to change the background color, and provide a FAQ section. As we pinpointed these, I immediately got to work and browsed [W3schools](https://www.w3schools.com/swift/swift_ui_styling_theming.asp) and watched a [YouTube tutorial](https://www.youtube.com/watch?v=JqQQozkFeJU) to understand how I can bring these suggestions to my app.
 
 
 ### Process
