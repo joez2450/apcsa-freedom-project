@@ -2,11 +2,11 @@
 ##### 5/8/26
 
 ### Context
-Ever since the last blog, I have been refining my app by implementing Beyond MVP features. After engaging in a gallery walk activity, I was able to receive feedback from my peers, and comparing their answers with the ones that Kyle recieved, we found three main points to work on in our game: improve the asthetics of our app, add a settings option to change the background color, and provide a FAQ section. As we pinpointed these, I immediately got to work and browsed [W3schools](https://www.w3schools.com/swift/swift_ui_styling_theming.asp) and watched a [YouTube tutorial](https://www.youtube.com/watch?v=JqQQozkFeJU) to understand how I can bring these suggestions to my app.
+Ever since the last blog, I have been refining my app by implementing Beyond MVP features. After engaging in a gallery walk activity, I was able to receive feedback from my peers, and by comparing their answers with the ones that Kyle received, we found three main points to work on in our game: improve the aesthetics of our app, add a settings option to change the background color, and provide an FAQ section. As we pinpointed these, I immediately got to work and browsed [W3schools](https://www.w3schools.com/swift/swift_ui_styling_theming.asp) and watched a [YouTube tutorial](https://www.youtube.com/watch?v=JqQQozkFeJU) to understand how I can bring these suggestions to my app.
 
 
 ### Process
-In Xcode, I started off by with a transition to using `TabView` and `Tab` to change the overall design of the user interface. While `NavigationStack` was a viable option, having multiple padded out buttons as a main menu lacked asthetics. `Tab` provided a more cleaner and organized look. I replaced the `NavigationStack` and `NavigationLink` within my main code file with `TabView` and `Tab`. Within each `Tab`, I gave it a distinct name (i.e. resources, home), and I also included an embedded `systemImage` so that each tab would have an appropriate display icon. Ultimately, my code looked like this:
+In Xcode, I started off with a transition to using `TabView` and `Tab` to change the overall design of the user interface. While `NavigationStack` was a viable option, having multiple padded out buttons as a main menu lacked aesthetics. `Tab` provided a cleaner and more organized look. I replaced the `NavigationStack` and `NavigationLink` within my main code file with `TabView` and `Tab`. Within each `Tab`, I gave it a distinct name (i.e. resources, home), and I also included an embedded `systemImage` so that each tab would have an appropriate display icon. Ultimately, my code looked like this:
 
 
 ```Swift
@@ -29,9 +29,9 @@ In Xcode, I started off by with a transition to using `TabView` and `Tab` to cha
                 }
 ```
 
-For my settings page, I included it in my `Resources` tab. After researching different code syntaxes on W3schools, I found `DisclosureGroup()` to be the most effective for my goal of creating an FAQ page as it served similarly to a dropdown menu. Within the parenthesis, you would include your question, and within the opening and closing brackets, there will be a `Text` that includes the answer.
+For my settings page, I included it in my `Resources` tab. After researching different code syntaxes on W3Schools, I found `DisclosureGroup()` to be the most effective for my goal of creating an FAQ page, as it served similarly to a dropdown menu. Within the parentheses, you would include your question, and within the opening and closing brackets, there will be a `Text` that includes the answer.
 
-In my case, I decided to add 3 important questions, which focused on our aim of reducing social media addiction, and their answers. Accordingly, I created three different `DisclosureGroup()` and using `Text`, I added their respective answers. Because everything was tightly packed, I added padding to create more spacing around each box, making my final code look like this.
+In my case, I decided to add 3 important questions, which focused on our aim of reducing social media addiction, and their answers. Accordingly, I created three different `DisclosureGroup()` and, using `Text`, I added their respective answers. Because everything was tightly packed, I added padding to create more spacing around each box, making my final code look like this.
 
 ```Swift
                         DisclosureGroup("What is the mission of the game?") {
@@ -48,17 +48,17 @@ In my case, I decided to add 3 important questions, which focused on our aim of 
                                .padding()
 ```
 
-Finally, I focused on creating a skider that would change the background color of my app. I wanted to keep things simple, so I focused on creating a light and dark mode feature. For this feature of my app, I used a `Toggle()`, where within the parenthesis, I added the title "Dark Mode" and a boolean status to see if the mode is on: `isOn: $isDark`. Then, I used `preferredColorScheme(isDark ? .dark : .light)` so that if `isDark` is true, then the color scheme will be dark. Otherwise, it would change to be light.
+Finally, I focused on creating a slider that would change the background color of my app. I wanted to keep things simple, so I focused on creating a light and dark mode feature. For this feature of my app, I used a `Toggle()`, where within the parenthesis, I added the title "Dark Mode" and a boolean status to see if the mode is on: `isOn: $isDark`. Then, I used `preferredColorScheme(isDark ? .dark : .light)` so that if `isDark` is true, then the color scheme will be dark. Otherwise, it would change to light.
 
 ### EDP
-Currently, I have completed stage 7 of the Engineering Design Process, which is to improve my prototype as needed. I am still working on stage 8, where I need to communicate my results. So far, I have already created slides and presented in class as well as the SEP Expo. However, because I was also selected as a showcase finalist with Kyle, we are both working to deliver a presentation that is shortly coming up.
+Currently, I have completed stage 7 of the Engineering Design Process, which is to improve my prototype as needed. I am still working on stage 8, where I need to communicate my results. So far, I have already created slides and presented in class as well as at the SEP Expo. However, because I was also selected as a showcase finalist with Kyle, we are both working to deliver a presentation that is coming up shortly.
 
 ### Skills
 #### Time Management
 Because it is June, all of the final exams and presentations are happening at once. To prepare for the Expo, I had to communicate clearly with my partner Kyle while also regularly adapting my schedule to ensure that I could complete my work alongside little to no conflict from the other competitions I was involved in. Not only that, since our coding project was also extremely complex, it also meant that it would take longer to break down the code into easy information for the audience to digest. To combat this, we would also work ahead of time to leave buffer time for possible revamps later on.
 
 #### Organization
-While making the presentations, I had to get hold of all of my coding files while also searching for reliable data to hook the audience in. Since there were a lot of different materials to manage, I usually create dedicated folders or leave specific notes detailing my plans on how to utilize the resource. Because of this, I rarely struggled with mental clarity and unnecessary stress while figuring out the next step. Such techniques only boosted my working efficiency, and I was able to utilize my time better admist a very busy academic season.
+While making the presentations, I had to get hold of all of my coding files while also searching for reliable data to hook the audience in. Since there were a lot of different materials to manage, I usually create dedicated folders or leave specific notes detailing my plans on how to utilize the resource. Because of this, I rarely struggled with mental clarity and unnecessary stress while figuring out the next step. Such techniques only boosted my working efficiency, and I was able to utilize my time better amidst a very busy academic season.
 
 
 [Previous](entry05.md) | [Next](entry07.md)
