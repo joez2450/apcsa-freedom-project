@@ -34,8 +34,8 @@ For my settings page, I included it in my `Resources` tab. After researching dif
 In my case, I decided to add 3 important questions, which focused on our aim of reducing social media addiction, and their answers. Accordingly, I created three different `DisclosureGroup()` and using `Text`, I added their respective answers. Because everything was tightly packed, I added padding to create more spacing around each box, making my final code look like this.
 
 ```Swift
- DisclosureGroup("What is the mission of the game?") {
-                                   Text("This game aims to stimulate well-being and the start of healthier habits. Rather than having online competition, we made it solitary, and the only goal is to improve yourself. Having no distracting noises or elements, our goal was to provide a space where positive resources and small games can intersect.")
+                        DisclosureGroup("What is the mission of the game?") {
+                                   Text("This game aims to stimulate well-being and the start of healthier habits. Rather than having online competition, we made it  solitary, and the only goal is to improve yourself. Having no distracting noises or elements, our goal was to provide a space where positive resources and small games can intersect.")
                                }
                                .padding()
                         DisclosureGroup("How can I start to use less social media?") {
