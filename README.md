@@ -1,10 +1,10 @@
 # APCSA Freedom Project
-by **X**
+by **Joe Zheng**
 
 ## Context
 I am a student at [HSTAT](https://www.hstat.org/) in the [Software Engineering Program](https://hstatsep.github.io/). The "Freedom Project" for AP Computer Science A is a year-long project all about making anything using technology.
 
-For my project, I chose to collaboratively study **Swift** in order to help me make **an app that was dedicated towards improving the mental wellness of people**.
+For my project, I chose to collaboratively study **Swift** with Kyle in order to help me make **an app that was dedicated towards improving the mental wellness of people**.
 
 ## Links
 
