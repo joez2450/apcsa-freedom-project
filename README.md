@@ -14,11 +14,11 @@ For my project, I chose to collaboratively study **Swift** in order to help me m
 
 ## Implications
 ##### PROS
-* We utilized gamification, making the concept of self-care as an engaging and rewarding experience.
+* We utilized gamification, making the concept of self-care an engaging and rewarding experience.
 * We include a soothing background colorway meant to lower anxiety, pressure, and uneasiness.
 * Our app is simplistic; nothing is overly complex, which will only cause our users to be more overwhelmed (contrary to what we aim to do).
 ##### CONS
-* There are still existing bugs in one of our games; we are still actively working to resolve it.
+* There are still existing bugs in one of our games; we are still actively working to resolve them.
 * Some people may find the app to be contrary to what they expect and take it the wrong way.
 * Because we focus on gamification, some users may feel even more down if they cannot perform well on a certain game. 
 
